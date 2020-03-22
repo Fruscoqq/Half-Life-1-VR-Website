@@ -1,0 +1,128 @@
+$theme-colors: (
+  "primary": rgba(231, 230, 230, 0.945),
+  "secondary": rgba(250, 144, 58, 0.966)
+  // "dark": #8D9290
+);
+
+@import "../../node_modules/bootstrap-scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@font-face{
+  font-family: HLFont;
+  src: url(../@font-face/6bfade094be277ea9158def0bfb13833.ttf);
+}
+*{
+  list-style-type: none;
+}
+
+.btn{
+  border-radius: 3px !important;
+}
+
+.line {
+  height: 3px;
+  background: red;
+  width: 30%;
+  margin: 0 auto;
+}
+
+// Body
+body {
+  background: #28292B;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+// Header
+#header{
+  background: linear-gradient(rgba(37, 37, 37, 0.233), rgb(40, 41, 43)) ,url('../images/headerBg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+// Navbar
+nav {
+  .navbar-brand {
+    font-family: HLFont, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+  }
+  .navbar-nav{
+    font-size: 1.1rem;
+  }
+}
+
+// Showcase
+#showcase{
+.row {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  h3{
+    font-family: 'HLFont', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .btn{
+    font-size: 1.3rem;
+  }
+
+  .note{
+    font-size: .7rem;
+    h4{
+      font-size: 1rem;
+    }
+  }
+ }
+}
+
+// Community
+#community{
+  // margin: 3rem 0 ;
+  background:linear-gradient(rgb(40, 41, 43), rgba(40, 41, 43, 0.767)) ,url('../images/communityBg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  .btn{
+    font-size: 1.1rem;
+    &:hover{
+    color: #FFFDFC !important;
+  }
+}
+}
+
+// Downloads
+#downloads{
+  // background: linear-gradient(rgba(250, 144, 58, 0),rgb(250, 144, 58)), url('../images/downloadsBg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  .colBorder{
+    border-right: 3px solid #343A40;
+  }
+  li{
+    padding: .4rem 0;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+}
+// Support
+#support{
+  background: linear-gradient(rgb(40, 41, 43), rgba(40, 41, 43, 0.767)), url('../images/downloadsBg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+}
+
+// Footer
+#footer{
+  background: rgb(53, 53, 53);
+  h4{
+    font-family: HLFont, sans-serif;
+    font-size: 3.3rem;
+  }
+  a{
+    padding: .6rem 0;
+  }
+}
